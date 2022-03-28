@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./index.css";
@@ -8,7 +8,10 @@ import Certificates from "./pages/Certificates";
 import About from "./pages/About";
 import Contact from "./pages/ContactMe";
 import Fallback from "./pages/404";
+import Drawer from "./components/Drawer";
 ReactDOM.render(
+  <Fragment>
+    <Drawer />
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<Home />}/>
@@ -19,6 +22,7 @@ ReactDOM.render(
     <Route path="/contact" element={<Contact />}/>
     <Route path="/*" element={<Fallback/>}/>
   </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
+  </Fragment>,
   document.getElementById("root")
 );
