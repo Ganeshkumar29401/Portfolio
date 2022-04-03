@@ -1,5 +1,8 @@
 .container{
     max-width: 20rem;
+    position: sticky;
+    top: 0px;
+    width: 30%;
     background: #273747;
     height: 100vh;
     padding: 2rem 3rem;
@@ -47,7 +50,8 @@
     margin: 3rem 0;
 }
 
-.lists li{
+.lists a{
+    text-decoration: none;
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 500;
@@ -56,6 +60,6 @@
     transition: color 0.2s;
 }
 
-.lists li:hover{
+.lists a:hover{
     color: #6DBCDB;
 }

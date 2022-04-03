@@ -11,8 +11,9 @@ import Fallback from "./pages/404";
 import Drawer from "./components/Drawer";
 ReactDOM.render(
   <Fragment>
-    <Drawer />
   <BrowserRouter>
+  <div className="wrapper">
+  <Drawer />
   <Routes>
     <Route path="/" element={<Home />}/>
     <Route path="/home" element={<Home />}/>
@@ -22,6 +23,7 @@ ReactDOM.render(
     <Route path="/contact" element={<Contact />}/>
     <Route path="/*" element={<Fallback/>}/>
   </Routes>
+  </div>
   </BrowserRouter>
   </Fragment>,
   document.getElementById("root")
