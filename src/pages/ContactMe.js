@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Form from "../components/Form";
 
 const Contact = (props)=>{
-    return <p>This is a Contact page</p>;
+    return <Fragment>
+        <Form />    
+    </Fragment>;
 };
 
 export default Contact;

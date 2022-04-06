@@ -1,0 +1,59 @@
+.container{
+    width: 100%;
+}
+h2{
+    padding: 3rem 0 1.5rem 3rem;
+    text-align: center;
+}
+.form{
+    padding: 20px;
+    max-width: 30rem;
+    margin: 10px auto;
+}
+
+.formfields{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+input, textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0.3rem;
+    margin-bottom: 1rem;
+    outline: 0;
+    transition: 0.2s;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button{
+    font-size: 1.3rem;
+    padding: 0.7rem 0.9rem;
+    border: 1px solid #f16d44;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    background: #fff;
+    color: #f16d44;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #f16d44;
+    border-color: #f16d44;
+    color: #fff;
+}
+
+input:focus,textarea:focus{
+    border: 1px solid #1778da;
+}

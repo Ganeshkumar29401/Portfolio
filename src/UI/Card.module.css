@@ -1,9 +1,9 @@
 .card{
     background-color: #fff;
-    max-width: 20rem;
     border-radius: 10px;
     position: relative;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 3px solid #333; */
 }
 .card .image img{
     width: 20rem;
